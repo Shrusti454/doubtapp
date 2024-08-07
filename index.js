@@ -7,7 +7,7 @@ app.use(cors());
 app.use(express.json());
 
 app.post("/save",(req,res) => {
-    const url = mongodb+srv://shrusti047:<password>@doubtapp.5szbucw.mongodb.net/?retryWrites=true&w=majority&appName=doubtapp;
+    const url = "mongodb+srv://shrusti047:<password>@doubtapp.5szbucw.mongodb.net/?retryWrites=true&w=majority&appName=doubtapp";
     const client = new MongoClient(url);
     const db = client.db("doubtapp");
     const coll = db.collection("student");
